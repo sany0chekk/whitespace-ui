@@ -1,19 +1,39 @@
-<header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
+<header class="py-3 max-lg:border-b">
+  <div class="container flex items-center justify-between">
+    <a href="" class="flex items-center gap-2.5">
+      <img
+        srcset="./img/logo.png 1x, ./img/logo@2x.png 2x"
+        src="./img/logo.png"
+        alt="Logotype"
+      />
+      <p class="hidden md:inline font-medium text-lg">Whitespace UI</p>
+    </a>
+    <div class="flex items-center gap-3 lg:gap-6">
+      <nav class="hidden lg:block">
+        <ul class="flex items-center gap-6">
+          <li>
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Features</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">About us</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">News</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="main-btn">Start now</button>
+      <button class="p-2 border rounded-md lg:hidden">
+        <svg class="w-6 h-6 stroke-black">
+          <use href="./img/svg/icons.svg#burger"></use>
         </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      </button>
+    </div>
   </div>
 </header>

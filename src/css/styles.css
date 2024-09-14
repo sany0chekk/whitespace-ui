@@ -1,18 +1,17 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import 'modern-normalize/modern-normalize.css';
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-[375px] px-4 md:max-w-screen-md md:px-8 lg:max-w-[1260px] mx-auto;
+}
+
+.main-btn {
+  @apply bg-blue text-white text-sm rounded-md font-sans font-semibold py-2 md:py-2.5  px-4 md:px-5 transition-colors hover:bg-sky-500;
+}
+
+.nav-link {
+  @apply font-medium text-base text-darkBlue transition-opacity hover:opacity-70;
+}
