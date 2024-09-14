@@ -59,3 +59,11 @@ img {
     width: calc((100% - 64px) / 3);
   }
 }
+
+.footer-title {
+  @apply font-semibold text-lg mb-4;
+}
+
+.footer-link {
+  @apply font-normal text-base text-darkBlue transition-opacity hover:opacity-70 flex items-center gap-2.5;
+}

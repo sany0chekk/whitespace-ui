@@ -1,51 +1,164 @@
-<footer
-  id="footer"
-  class="pt-[100px] md:pt-[120px] lg:pt-[130px] pb-12 md:pb-16 lg:pb-10"
->
+<footer id="footer" class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
   <div class="container">
-    <div>
-      <a href="" class="flex items-center justify-center gap-2.5 mb-6">
-        <img
-          srcset="./img/logo.png 1x, ./img/logo@2x.png 2x"
-          src="./img/logo.png"
-          alt="Logotype"
-        />
-        <p class="font-medium text-lg">Whitespace UI</p>
-      </a>
-      <p class="font-normal text-base text-darkBlue text-center mb-8">
-        We love working with ambitious people. Let's build something great
-        together now.
+    <div
+      class="min-[1170px]:flex min-[1170px]:items-start min-[1170px]:justify-between min-[1170px]:gap-16 pb-8"
+    >
+      <div class="max-w-[316px] max-lg:mb-16">
+        <a
+          href="#"
+          class="flex items-center max-md:justify-center gap-2.5 mb-6"
+        >
+          <img
+            srcset="./img/logo.png 1x, ./img/logo@2x.png 2x"
+            src="./img/logo.png"
+            alt="Logotype"
+          />
+          <p class="font-medium text-lg">Whitespace UI</p>
+        </a>
+        <p class="font-normal text-base text-darkBlue max-md:text-center mb-8">
+          We love working with ambitious people. Let's build something great
+          together now.
+        </p>
+        <ul class="flex items-center max-md:justify-center gap-1">
+          <li>
+            <a href="#" class="transition-opacity hover:opacity-70">
+              <svg class="w-6 h-6 fill-grey stroke-white">
+                <use href="./img/svg/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="transition-opacity hover:opacity-70">
+              <svg class="w-6 h-6 fill-grey stroke-white">
+                <use href="./img/svg/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="transition-opacity hover:opacity-70">
+              <svg class="w-6 h-6 fill-grey stroke-white">
+                <use href="./img/svg/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="transition-opacity hover:opacity-70">
+              <svg class="w-6 h-6 fill-grey stroke-white">
+                <use href="./img/svg/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="md:flex gap-14">
+        <div class="flex flex-wrap gap-14 max-md:mb-16">
+          <div>
+            <h3 class="footer-title">Product</h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a href="#" class="footer-link">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Case Studies</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Features</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Reviews</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Updates</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-title">Company</h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a href="#" class="footer-link">About</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">News</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-title">Support</h3>
+            <ul class="flex flex-col gap-4">
+              <li>
+                <a href="#" class="footer-link">Help Center</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Status</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Report a Bug</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Chat Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-[238px]">
+          <h3 class="footer-title">Contact us</h3>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                href="mailto:hello@whitespaceui.design"
+                class="footer-link group"
+              >
+                <svg class="w-5 h-5 fill-none stroke-grey flex-shrink-0">
+                  <use href="../img/svg/icons.svg#email-footer"></use>
+                </svg>
+                <p>hello@whitespaceui.design</p>
+              </a>
+            </li>
+            <li>
+              <a href="tel:1500300250" class="footer-link group">
+                <svg class="w-5 h-5 fill-none stroke-grey flex-shrink-0">
+                  <use href="../img/svg/icons.svg#phone-footer"></use>
+                </svg>
+                <p>+1 (500) 300 250</p>
+              </a>
+            </li>
+            <li>
+              <a href="tel:1500300250" class="footer-link group">
+                <svg class="w-5 h-5 fill-none stroke-grey flex-shrink-0">
+                  <use href="../img/svg/icons.svg#location-footer"></use>
+                </svg>
+                <p>3891 Ranchview Dr. Richardson, CA 62639</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="border-t pt-8 pb-10 flex flex-col md:flex-row md:justify-between items-center gap-3"
+    >
+      <p class="font-normal text-base text-darkBlue">
+        © 2023 Whitespace UI - All rights reserved
       </p>
-      <ul class="flex items-center justify-center gap-1">
-        <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-grey stroke-white">
-              <use href="./img/svg/icons.svg#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-grey stroke-white">
-              <use href="./img/svg/icons.svg#facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-grey stroke-white">
-              <use href="./img/svg/icons.svg#twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="w-6 h-6 fill-grey stroke-white">
-              <use href="./img/svg/icons.svg#linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div>
+        <a href="#" class="font-normal text-base text-blue hover:underline"
+          >Terms of Service</a
+        >
+        <span class="opacity-30">|</span>
+        <a href="#" class="font-normal text-base text-blue hover:underline"
+          >Privacy Policy</a
+        >
+      </div>
     </div>
   </div>
 </footer>
