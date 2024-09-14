@@ -1,5 +1,8 @@
 @import 'modern-normalize/modern-normalize.css';
 
+@import './loader.css';
+@import './accordion.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,7 +26,7 @@ img {
 }
 
 .main-title {
-  @apply mb-3 font-semibold text-dark text-[28px] md:text-[36px] text-center md:leading-tight;
+  @apply mb-3 font-semibold text-dark text-[28px] md:text-[36px] text-center leading-8 md:leading-tight;
 }
 
 .main-descr {

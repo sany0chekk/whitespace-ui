@@ -14,13 +14,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="font-sans text-base text-darkBlue">
-    <load src="./partials/header.html" />
+    <div id="loader" class="loader-container">
+      <span class="loader"></span>
+    </div>
+    <div id="content">
+      <load src="./partials/header.html" />
 
-    <main>
-      <load src="./partials/hero.html" />
-      <load src="./partials/features.html" />
-    </main>
+      <main>
+        <load src="./partials/hero.html" />
+        <load src="./partials/features.html" />
+        <load src="./partials/benefits.html" />
+        <load src="./partials/faq.html" />
+      </main>
+    </div>
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="./main.js" defer></script>
   </body>
 </html>
