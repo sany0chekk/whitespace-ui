@@ -18,7 +18,7 @@ img {
 }
 
 .main-btn {
-  @apply bg-blue text-white text-sm rounded-md font-sans font-semibold py-2 md:py-2.5  px-4 md:px-5 transition-colors hover:bg-sky-500;
+  @apply flex items-center justify-center gap-2 bg-blue text-white text-sm rounded-md font-sans font-semibold py-2 md:py-2.5  px-4 md:px-5 transition-colors hover:bg-sky-500;
 }
 
 .main-tag {
@@ -51,5 +51,11 @@ img {
     background-color: #1a75ff;
     z-index: -1;
     border-radius: 10px;
+  }
+}
+
+.blog-item-width {
+  @media screen and (min-width: 1024px) {
+    width: calc((100% - 64px) / 3);
   }
 }
