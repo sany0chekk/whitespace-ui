@@ -3,6 +3,8 @@
 @import './loader.css';
 @import './accordion.css';
 
+@import './mobile-menu.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

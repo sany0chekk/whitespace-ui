@@ -21,6 +21,9 @@
 .ac .ac-header {
   margin: 0;
   padding: 0;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 18px;
 }
 .ac .ac-trigger {
   font: medium 18px 'Inter', sans-serif;
@@ -47,9 +50,9 @@
   right: 10px;
   top: 50%;
 }
-.ac .ac-trigger:focus {
+/* .ac .ac-trigger:focus {
   color: #8a8a8a;
-}
+} */
 .ac .ac-panel {
   overflow: hidden;
   transition-property: height, visibility;

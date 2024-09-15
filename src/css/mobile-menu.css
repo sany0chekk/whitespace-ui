@@ -1,0 +1,11 @@
+.mobile-menu {
+  @apply fixed top-0 left-0 w-full h-full bg-white p-6 z-30 overflow-y-auto translate-x-1/2 transition-all opacity-0 pointer-events-none invisible;
+
+  &.active {
+    @apply translate-x-0 opacity-100 pointer-events-auto visible;
+  }
+}
+
+.mobile-nav-link {
+  @apply font-bold text-xl uppercase;
+}
