@@ -13,7 +13,7 @@
     />
     <script type="module" crossorigin src="/whitespace-ui/index.js"></script>
     <link rel="modulepreload" crossorigin href="/whitespace-ui/assets/vendor-BaWhf9Kk.js">
-    <link rel="stylesheet" crossorigin href="/whitespace-ui/assets/index-CMHZZbt7.css">
+    <link rel="stylesheet" crossorigin href="/whitespace-ui/assets/index-DlAB4Q05.css">
   </head>
   <body class="font-sans text-base text-darkBlue overflow-x-hidden">
     <div id="loader" class="loader-container">
@@ -93,9 +93,10 @@
         better, and people happier.
       </p>
       <div class="flex flex-col md:flex-row gap-3 mb-6">
-        <button class="main-btn">Learn more</button>
+        <a href="#faq" class="main-btn">Learn more</a>
         <button
           class="font-sans font-semibold text-darkBlue text-sm flex items-center justify-center gap-2 h-10 px-5 border rounded-md transition-opacity hover:opacity-50"
+          id="play-video"
         >
           <svg class="w-5 h-5 fill-none stroke-darkBlue">
             <use href="/whitespace-ui/assets/icons-BEo3Za1J.svg#play"></use>
@@ -414,7 +415,7 @@
       We're sorry we couldn't provide you with the information you were looking
       for. Please contact us and we'll be happy to help.
     </p>
-    <button class="main-btn mx-auto max-md:w-full">
+    <button id="open-contact" class="main-btn mx-auto max-md:w-full">
       <svg class="w-5 h-5 fill-none stroke-white">
         <use href="/whitespace-ui/assets/icons-BEo3Za1J.svg#contact-us"></use>
       </svg>
@@ -934,6 +935,62 @@
       <a href="#footer" class="mobile-nav-link">Contact</a>
     </li>
   </ul>
+</div>
+
+      <div id="player" class="video-player">
+  <div id="player-container" class="video-container">
+    <iframe
+      id="video"
+      class="video"
+      src="https://www.youtube.com/embed/pFBhTGgmfXw"
+      frameborder="0"
+    ></iframe>
+  </div>
+</div>
+
+      <div id="contact" class="modal contact-modal">
+  <div
+    id="contact-container"
+    class="max-w-[400px] w-full rounded-md bg-white p-2.5 flex flex-col"
+  >
+    <button
+      class="ml-auto mb-3 font-bold text-lg transition-opacity hover:opacity-50"
+      aria-label="Close menu"
+      id="close-contact"
+    >
+      &#x2715;
+    </button>
+    <h2 class="text-center text-xl font-bold mb-2">Contact us</h2>
+    <form action="" class="flex flex-col gap-3 outline-none">
+      <div class="flex flex-col gap-1 group">
+        <label
+          for="email"
+          class="text-sm opacity-50 transition-opacity group-focus-within:opacity-95"
+          >Your email</label
+        >
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="border text-sm rounded-md p-2 outline-none transition-colors focus:border-neutral-400"
+          placeholder="example@gmail.com"
+        />
+      </div>
+      <div class="flex flex-col gap-1 group">
+        <label
+          for="message"
+          class="text-sm opacity-50 transition-opacity group-focus-within:opacity-95"
+          >Message</label
+        >
+        <textarea
+          name="message"
+          class="border text-sm rounded-md p-2 resize-none outline-none transition-colors focus:border-neutral-400 min-h-32"
+          placeholder="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, quis!"
+        ></textarea>
+      </div>
+      <button type="submit" class="main-btn mt-5">Send message</button>
+    </form>
+  </div>
 </div>
 
     </div>
