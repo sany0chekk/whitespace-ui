@@ -1,13 +1,16 @@
 <header id="header" class="py-3 lg:py-4 max-lg:border-b top-0 left-0">
   <div class="container flex items-center justify-between">
-    <a href="" class="flex items-center gap-2.5">
+    <p
+      href="#"
+      class="flex items-center gap-2.5 select-none pointer-events-none"
+    >
       <img
         srcset="./img/logo.png 1x, ./img/logo@2x.png 2x"
         src="./img/logo.png"
         alt="Logotype"
       />
-      <p class="hidden md:inline font-medium text-lg">Whitespace UI</p>
-    </a>
+      <span class="hidden md:inline font-medium text-lg">Whitespace UI</span>
+    </p>
     <div class="flex items-center gap-3 lg:gap-6">
       <nav class="hidden lg:block">
         <ul class="flex items-center gap-6">
@@ -28,7 +31,7 @@
           </li>
         </ul>
       </nav>
-      <button class="main-btn">Start now</button>
+      <a href="#start-now" class="main-btn">Start now</a>
       <button
         id="open-menu"
         class="p-2 border rounded-md lg:hidden"

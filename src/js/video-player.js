@@ -1,6 +1,6 @@
 import { closeModalAction, openModalAction } from './utils/modalActions';
 
-const openBtn = document.querySelector('#play-video');
+const openBtn = document.querySelectorAll('#play-video');
 const videoModal = document.querySelector('#player');
 const videoContainer = document.querySelector('#player-container');
 
@@ -13,5 +13,8 @@ const stopVideo = () => {
   }
 };
 
-openModalAction(openBtn, videoModal);
+openBtn.forEach(btn => {
+  openModalAction(btn, videoModal);
+});
+
 closeModalAction(null, videoModal, videoContainer, stopVideo);
